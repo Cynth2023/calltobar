@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0 10px 0 10px;
+        }
+
+        header{
+            padding: 20px 0px 20px 0px;
+            vertical-align: middle;
+            position: fixed;
+            right: 0;
+            left: 0;
+            background-color: rgb(40, 40, 91);
+            color: rgb(177, 177, 8);
+        }
+        
+        .header-icon{
+            color: white;
+            display: inline-block;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .button-div{
+            float: right;
+            clear: both;
+        }
+        .log-button{
+            width: 80px;
+            height: 35px;
+            border: 2px solid rgb(177, 177, 8);
+            font-weight: bold;
+            font-size: 17px;
+            background-color: rgb(40, 40, 91);
+            color: rgb(177, 177, 8);
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .log-button:hover{
+            color: rgb(40, 40, 91);
+            background-color: rgb(177, 177, 8);
+        }
+
+        label{
+            width: 500px;
+            color: rgb(40, 40, 91);
+            font-weight: bold;
+        }
+
+        form{
+            float: right;
+            margin-right: 100px;
+            margin-bottom: 200px;
+            padding-left: 60px;
+            padding-bottom: 40px;
+            border-left: 2px solid rgba(40, 40, 91, 0.393);
+            border-bottom: 2px solid rgba(40, 40, 91, 0.393);
+        }
+
+        h1, p{
+            text-align: center;
+        }
+        h1{
+            color: rgb(40, 40, 91);
+        }
+        
+        input{
+            width: 500px;
+            height: 50px;
+            border: 2px solid rgb(177, 177, 8);
+        }
+        input:focus{
+            border: none;
+        }
+
+        input[type=submit]{
+            background-color: rgb(177, 177, 8);
+            color: rgb(40, 40, 91);
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            padding: 10px 0 10px 0;
+        }
+        input[type=submit]:hover{
+            background-color: rgba(177, 177, 8, 0.575);
+        }
+
+        span{
+            cursor: pointer;
+        }
+
+        footer{
+            background-color: rgb(40, 40, 91);
+            color: white;
+            height: 150px;
+            text-align: center;
+            padding: 10px;
+            margin: 700px -10px 0 -10px;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body id="theme">
+    <header>
+        <h2 class="header-icon" onclick="parent.location='final_project.html'">CallToBar</h2>
+        <div class="button-div">
+            <button class="log-button" onclick="parent.location='signup.html'">Signup</button>>
+        </div>
+
+    </header><br><br><br><br><br><br><br><br><br><br>
+
+    <form>
+        <h1>WELCOME BACK</h1><br><br>
+        <div class="form-div">
+            <label>EMAIL:</label><br>
+            <input type="email"><br><br><br>
+            
+            <label>PASSWORD:</label><br>
+            <input type="password"><br><br><br><br><br>
+
+            <input type="submit" value="Login">
+            <P><i>Don't have an account? </i><span onclick="parent.location='signup.html'">
+                Sign up</span></P>
+        </div>
+    </form>
+    
+    <footer>
+        <p>contact us on +234 543 398 6344</p>
+        <p>@copyright</p>
+    </footer>
+</body>
+</html>
